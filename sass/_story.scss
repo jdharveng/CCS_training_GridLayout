@@ -7,5 +7,29 @@
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+
+    padding: 6rem 12rem;
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // to avoid having the button to spand the complete width
+    // as standard align-items is set to : "stretch"
+    // use:
+    align-items: flex-start;
+    */
+
+    // alternative with Grid layout with 1D
+    display: grid;
+    align-content: center;
+    // to arrange
+    justify-items: start;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
